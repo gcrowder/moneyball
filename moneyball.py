@@ -7,7 +7,7 @@ places = appearances[['yearID', 'teamID', 'playerID', 'G_p', 'G_c',
                       'G_cf', 'G_rf', 'G_of', 'G_dh']].copy()
 
 
-def keywithmaxval(dictionary):
+def key_with_max_value(dictionary):
     """ a) create a list of the dict's keys and values;
         b) return the key with the max value
         From stack overflow: getting-key-with-maximum-value-in-dictionary"""
@@ -30,7 +30,7 @@ def find_position(places):
                  'right_field': row.G_rf,
                  'out_field': row.G_of,
                  'designated hitter': row.G_dh}
-        played_at.append(keywithmaxval(spots))
+        played_at.append(key_with_max_value(spots))
     return played_at
 
 positions = pd.Series(find_position(places))
