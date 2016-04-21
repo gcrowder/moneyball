@@ -9,7 +9,7 @@ def test_key_with_max_value():
 
 def test_find_position():
     data_frame = pd.DataFrame({'yearID': [2015, 2015, 2015],
-                               'teamID': ['ATL', 'TOR', 'PHI'],
+                               'teamID': ['LAA', 'LAD', 'OAK'],
                                'playerID': ['Player1', 'Player2', 'Player3'],
                                'G_p': [25, 18, 12],
                                'G_c': [5, 10, 2],
