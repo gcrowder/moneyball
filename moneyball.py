@@ -38,12 +38,3 @@ def on_base_percentage(hits, walks, hit_by_pitch, at_bats, sacrifice_flies):
     numerator = hits + walks + hit_by_pitch
     denominator = at_bats + walks + hit_by_pitch + sacrifice_flies
     return numerator / denominator
-
-# positions = pd.Series(find_position(places))
-# appearances = appearances[['yearID', 'teamID', 'playerID']].copy()
-# appearances['position'] = positions
-# print(appearances)
-
-# columns = ['playerID', 'yearID', 'stint', 'teamID', 'lgID', 'G', 'AB', 'H', 'BB', 'HBP', 'SH', 'SF']
-# 'playerID', 'yearID', 'stint', 'teamID', 'lgID', 'G', 'AB', 'H', 'BB', 'HBP', 'SH', 'SF', 'salary'
-# types = {'playerID': str, 'yearID': str, 'stint': numpy.float64, 'teamID': str, 'lgID': str, 'G': numpy.float64, 'AB': numpy.float64, 'H': numpy.float64, 'BB': numpy.float64, 'HBP': numpy.float64, 'SH': numpy.float64, 'SF': numpy.float64}
