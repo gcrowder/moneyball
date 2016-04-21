@@ -25,3 +25,7 @@ def test_find_position():
 
     desired_result = ['pitcher', 'first_base', 'short_stop']
     assert moneyball.find_position(data_frame) == desired_result
+
+
+def test_on_base_percentage():
+    assert moneyball.on_base_percentage(1, 1, 1, 2, 2) == .5

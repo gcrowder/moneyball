@@ -33,6 +33,12 @@ def find_position(places):
         played_at.append(key_with_max_value(spots))
     return played_at
 
+
+def on_base_percentage(hits, walks, hit_by_pitch, at_bats, sacrifice_flies):
+    numerator = hits + walks + hit_by_pitch
+    denominator = at_bats + walks + hit_by_pitch + sacrifice_flies
+    return numerator / denominator
+
 # positions = pd.Series(find_position(places))
 # appearances = appearances[['yearID', 'teamID', 'playerID']].copy()
 # appearances['position'] = positions
